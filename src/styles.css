@@ -1,0 +1,226 @@
+/* You can add global styles to this file, and also import other style files */
+
+*{
+
+    padding: 0;
+    margin: 0;
+}
+
+body{
+
+    background:darkgrey;
+    color: darkblue;
+    font-size: 15px;
+    text-align: center;
+    text-shadow: 4px 4px 5px #d1510f;
+    font-family: sans-serif;
+    
+
+}
+
+nav{
+
+    background-color: indigo;
+    
+}
+
+.banner{
+
+    background: url("assets/img/background.png");
+    height: 400px;
+    font-size: 50px;
+    margin-top: -70px;
+    box-shadow: 4px 4px 5px #d1510f;
+    width: 100%;
+    background-size: cover;
+
+
+}
+
+.foto_perfil{
+
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-color: darkblue;
+    margin-top: -80px;
+
+
+}
+
+#image{
+
+    width: 200px;
+}
+
+#experiencia-diseño{
+
+    background-color: darkblue;
+    color: darkorange;
+    border: 3px solid green;
+    box-shadow: 4px 4px 5px #d1510f;
+    width: 100%;
+
+}
+
+
+#educacion-diseño{
+
+    background-color: darkblue;
+    color: darkorange;
+    border: 3px solid green;
+    box-shadow: 4px 4px 5px #d1510f;
+    width: 100%;
+
+
+}
+
+#skills-diseño{
+
+    background-color: darkblue;
+    color: darkorange;
+    border: 3px solid green;
+    box-shadow: 4px 4px 5px #d1510f;
+    width: 100%;
+
+}
+
+#proyectos-diseño{
+
+    background-color: darkblue;
+    color: darkorange;
+    border: 3px solid green;
+    box-shadow: 4px 4px 5px #d1510f;
+    width: 100%;   
+
+}
+
+#pie_pagina{
+
+    background-color: darkred;
+    color: white;
+    font-size: 12px;
+    box-shadow: 4px 4px 5px #d1510f;
+    width: 100%;   
+
+}
+
+#table {
+
+    color: white;
+    background: black;
+    border-spacing: 50px;
+
+
+}
+
+
+button{
+
+    font-size: 12px;
+
+}
+
+
+/* Diseño responsivo */
+
+@media screen and (min-height:600px) and (max-height:1368px) and (min-width:280px) and (max-width:1280px){
+
+    #ban{
+
+        font-size: 30px;
+        line-height: 300px;
+
+    }
+
+    #datos p{
+
+        font-size: 20px;
+        
+
+    }
+
+    #biografia{
+
+       width: 180px;
+    }
+
+    #biografia li h1{
+
+        font-size: 18px;
+        font-weight: bolder;
+
+    }
+
+    #menu2 li img{
+
+        margin: -10px;
+        width: 39px;
+
+    }
+
+
+
+    #menu2 li button{
+
+        margin: -10px;
+
+    }
+    
+    .table{
+
+        border: 0px;
+
+    }
+
+    .table caption{
+
+        font-size: 22px;
+
+    }
+
+    .table thead{
+
+        display: none;
+
+    }
+
+    .table tr{
+
+        margin-bottom: 8px;
+        margin-bottom: 4px solid #000000;
+        display: block;
+    }
+
+    .table td{
+
+        display: block;
+        border-bottom: 1px solid #000000;
+        text-align: left;
+
+    }
+
+    .table td:last-child{
+
+        border-bottom: 0px;
+
+    }
+
+    .table td::before{
+
+        font-weight: bold;
+        float: left;
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+

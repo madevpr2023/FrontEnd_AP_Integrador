@@ -1,0 +1,56 @@
+<h1>Soft Skills</h1>
+
+<br><br>
+
+<form class="formulario" #f="ngForm" (ngSubmit)="Creacion()" novalidate>
+
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Nueva Habilidad</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" [(ngModel)]="habilidad" name="habilidad">
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Nuevo Porcentaje</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" [(ngModel)]="porcentaje" name="porcentaje">
+      </div>
+
+      <br><br>
+
+      <button class="btn btn-success" type="submit">Agregar</button> <button class="btn btn-danger" routerLink="/">Volver</button>
+
+</form>
+
+<br><br>
+
+<h1>Hard Skills</h1>
+
+<br><br>
+
+<form class="formulario" #f="ngForm" (ngSubmit)="Creacion1()" novalidate>
+
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Nueva Habilidad</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" [(ngModel)]="habilidad1" name="habilidad1">
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Nuevo Porcentaje</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" [(ngModel)]="porcentaje1" name="porcentaje1">
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Nuevo Porcentaje</label>
+        <input type="file" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" [(ngModel)]="img" name="img" accept=".jpg, .jpeg, .png" (change)="UploadImage($event)">
+      </div>
+
+      <div class="imagen">
+
+        <img [src]="ImageService.url" width="200px">
+
+      </div>
+
+      <br><br>
+
+      <button class="btn btn-success" type="submit">Agregar</button> <button class="btn btn-danger" routerLink="/">Volver</button>
+
+</form>

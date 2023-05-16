@@ -1,0 +1,40 @@
+<h1>Experiencia</h1>
+
+<br><br>
+
+<div *ngIf="experiencia">
+
+<form class="formulario" #f="ngForm" (ngSubmit)="Actualizacion()" novalidate>
+
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Empresa</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" [(ngModel)]="experiencia.empresa" required name="empresa"> 
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Puesto</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" [(ngModel)]="experiencia.puesto" required name="puesto">
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Año de Inicio</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" [(ngModel)]="experiencia.anioInicio" required name="anioInicio">
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Año de Finalizacion</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" [(ngModel)]="experiencia.anioFin" required name="anioFin">
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Descripcion del puesto</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" [(ngModel)]="experiencia.descripcion" required name="descripcion"></textarea>
+      </div>
+
+      <br><br>
+
+      <button class="btn btn-success"  type="submit">Editar</button> <button class="btn btn-danger" routerLink="/">Volver</button>
+
+</form>
+
+</div>

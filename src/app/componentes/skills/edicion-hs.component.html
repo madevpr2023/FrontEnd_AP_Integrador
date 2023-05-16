@@ -1,0 +1,36 @@
+<h1>Hard Skills</h1>
+
+<br><br>
+
+<div *ngIf="hs">
+
+<form class="formulario" #f="ngForm" (ngSumbit)="Actualizacion()" novalidate>
+
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Habilidad</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" [(ngModel)]="hs.habilidad" name="habilidad">
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Porcentaje</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" [(ngModel)]="hs.porcentaje" name="porcentaje">
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Porcentaje</label>
+        <input type="file" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" (change)="UploadImage($event)" [(ngModel)]="hs.img" name="img">
+      </div>
+
+      <div class="mb-3">
+
+        <img [src]="ImageService.url" width="200px">
+        
+      </div>
+
+      <br><br>
+
+      <button class="btn btn-success" type="submit">Editar</button> <button class="btn btn-danger" routerLink="/">Volver</button>
+
+</form>
+
+</div>

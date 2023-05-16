@@ -1,0 +1,46 @@
+<h1>Editar persona</h1>
+
+<br><br>
+
+<div *ngIf="persona">
+
+<form class="formulario" #f="ngForm" (ngSubmit)="Actualizacion()">
+
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" [(ngModel)]="persona.nombre" name="nombre" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Apellido</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" [(ngModel)]="persona.apellido" name="apellido">
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Puesto Actual</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" [(ngModel)]="persona.puesto" name="puesto">
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Adress</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" [(ngModel)]="persona.adress" name="adress">
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Descripcion</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" [(ngModel)]="persona.descripcion" name="descripcion"></textarea>
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Adress</label>
+        <input type="file" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" [(ngModel)]="persona.img" accept=".jpg, .jpeg. , .png" name="img" (change)="UploadImage($event)">
+      </div>
+
+      <br><br>
+
+      <button class="btn btn-success">Editar</button> <button class="btn btn-danger" routerLink="/">Volver</button>
+
+</form>
+
+</div>
+

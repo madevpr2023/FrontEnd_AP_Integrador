@@ -1,0 +1,48 @@
+<h1>Educacion Complementaria</h1>
+
+<br><br>
+
+<div *ngIf="educacioncomp">
+
+<form class="formulario" #f="ngForm" (ngSubmit)="Actualizacion()" novalidate>
+
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Institucion</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" [(ngModel)]="educacioncomp.institucion" required name="institucion">
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Curso</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" [(ngModel)]="educacioncomp.curso" required name="curso">
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Año de Inicio</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" [(ngModel)]="educacioncomp.anioInicio" required name="anioInicio">
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Año de Finalizacion</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" [(ngModel)]="educacioncomp.anioFin" required name="anioFin">
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Nuevo Porcentaje</label>
+    <input type="file" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" accept=".jpg, jpeg, .png" (change)="UploadImage($event)" [(ngModel)]="educacioncomp.img" name="img">
+  </div>
+
+  <div class="mb-3">
+    
+    <img [src]="imageserv.url" width="200px">
+
+  </div>
+
+
+  <br><br>
+
+  <button class="btn btn-success" type="submit">Editar</button> <button class="btn btn-danger" routerLink="/">Volver</button>
+
+  </form>
+
+  </div>
+

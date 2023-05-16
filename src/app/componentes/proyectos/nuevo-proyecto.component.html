@@ -1,0 +1,37 @@
+<h1>Proyectos</h1>
+
+<br><br>
+
+<form class="formulario" #f="ngForm" (ngSubmit)="Creacion()" novalidate>
+
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Nuevo Nombre</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" [(ngModel)]="nombre" required name="nombre">
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Nueva Imagen</label>
+        <input type="file" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" [(ngModel)]="img" required name="img" (change)="UploadImage($event)">
+      </div>
+
+      <div class="imagen">
+
+        <img [src]="ImageService.url" width="200px">
+
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Nueva Descripcion</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" [(ngModel)]="descripcion" required name="descripcion"></textarea>
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Nuevo Link del Proyecto</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" [(ngModel)]="link" required name="link">
+      </div>
+
+      <br><br>
+
+      <button class="btn btn-success"  type="submit">Agregar</button> <button class="btn btn-danger" routerLink="/">Volver</button>
+
+</form>

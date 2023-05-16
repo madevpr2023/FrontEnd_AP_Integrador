@@ -1,0 +1,28 @@
+<h1>Iniciar Sesion</h1>
+
+<br><br>
+
+
+<form class="formulario" #f="ngForm" (ngSubmit)="onLogin()" novalidate><br><br>
+
+    <div class="input-group flex-nowrap">
+        <span class="input-group-text" id="addon-wrapping">Username</span>
+        <input type="email" id="nameUser" name="nameUser" class="form-control" [(ngModel)]="nameUser" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping" required/>
+      </div>
+
+      <br><br>
+
+      <div class="input-group flex-nowrap">
+        <span class="input-group-text" id="addon-wrapping">Password</span>
+        <input type="password" id="password" name="password" class="form-control" placeholder="Password" [(ngModel)]="password" aria-label="Password" aria-describedby="addon-wrapping" required/>
+      </div>
+
+      <br><br>
+
+      <button class="btn btn-success" type="submit">Iniciar sesion</button> <button class="btn btn-danger" routerLink="/">Volver</button><br><br>
+
+      <p class="mb-0">¿No tienes una cuenta?</p> <a href="#!" class="text-white-50 fw-bold">Crear una cuenta</a>
+     
+
+</form>
+

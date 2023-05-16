@@ -1,0 +1,36 @@
+<h1>Experiencia</h1>
+
+<br><br>
+
+<form class="formulario" #f="ngForm" (ngSubmit)="Creacion()" novalidate>
+
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Nueva Empresa</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" [(ngModel)]="empresa" required name="empresa">
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Nuevo Puesto</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" [(ngModel)]="puesto" required name="puesto">
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Nuevo Año de Inicio</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" [(ngModel)]="anioInicio" required name="anioInicio">
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Nuevo Año de Finalizacion</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" [(ngModel)]="anioFin" required name="anioFin">
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Nueva Descripcion del puesto</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" [(ngModel)]="descripcion" required name="descripcion"></textarea>
+      </div>
+
+      <br><br>
+
+      <button class="btn btn-success"  type="submit">Agregar</button> <button class="btn btn-danger" routerLink="/"></button>
+
+</form>

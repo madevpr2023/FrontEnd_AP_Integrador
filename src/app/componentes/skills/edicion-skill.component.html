@@ -1,0 +1,30 @@
+<h1>Soft Skills</h1>
+
+<br><br>
+
+<div *ngIf="ss">
+
+<form class="formulario" #f="ngForm" (ngSubmit)="Actualizacion()" novalidate>
+
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Habilidad</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" [(ngModel)]="ss.habilidad" name="habilidad">
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Porcentaje</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" [(ngModel)]="ss.porcentaje" name="porcentaje">
+      </div>
+
+
+      <br><br>
+
+      <button class="btn btn-success" type="submit">Editar</button> <button class="btn btn-danger" routerLink="/">Volver</button>
+
+</form>
+
+</div>
+
+
+
+

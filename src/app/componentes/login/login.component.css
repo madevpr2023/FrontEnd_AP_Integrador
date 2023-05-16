@@ -1,0 +1,35 @@
+.formulario{
+
+    background: linear-gradient(beige, blue);
+    font-size: 25px;
+    text-shadow: 4px 4px 5px #d1510f;
+    text-align: center;
+    border-radius: 35px;
+    border: 3px solid darkcyan;
+
+}
+
+.formulario input{
+
+    background: slateblue;
+    color: ghostwhite;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+
+
+body{
+
+    background: linear-gradient(120deg, #de6262 35%,  #ffb88c);
+    font-size: 20px;
+    color: darkblue;
+    
+
+
+}
+
+button{
+
+    margin: 20px;
+}
