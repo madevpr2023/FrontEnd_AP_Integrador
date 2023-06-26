@@ -74,7 +74,7 @@ export class EdicionAcercadeComponent implements OnInit{
 
     const id = this.activatedrouter.snapshot.params['id'];
 
-    const name = "photo" + id;
+    const name = "about" + id;
 
     this.ImageService.UploadImage($event, name);
 
