@@ -92,11 +92,22 @@ export class NuevaEducacionComponent implements OnInit{
 
     const id = this.activatedrouter.snapshot.params['id'];
 
-    const name = "photo" + id;
+    const name = "educacion" + id;
 
     this.ImageService.UploadImage($event, name);
 
   }
+
+  UploadImage1($event:any){
+
+    const id = this.activatedrouter.snapshot.params['id'];
+
+    const name = "educacioncomp" + id;
+
+    this.ImageService.UploadImage($event, name);
+
+  }
+
 
 
 }

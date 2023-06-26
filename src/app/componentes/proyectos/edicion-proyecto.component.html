@@ -13,12 +13,12 @@
 
       <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Imagen</label>
-        <input type="file" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" (change)="UploadImage($event)" [(ngModel)]="proyectos.img" name="img">
+        <input type="file" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" (change)="UploadImage($event)">
       </div>
 
       <div class="mb-3">
        
-        <img [src]="ImageService.url" width="200px">
+        <input type="text" [(ngModel)]="proyectos.img" name="img" [value]="ImageService.url">
 
       </div>
 

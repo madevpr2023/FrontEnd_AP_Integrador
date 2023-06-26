@@ -75,7 +75,7 @@ export class EdicionEduccompComponent implements OnInit{
 
     const id = this.activatedrouter.snapshot.params['id'];
 
-    const name = "foto_" + id;
+    const name = "educacioncomp" + id;
 
     this.imageserv.UploadImage($event, name);
 

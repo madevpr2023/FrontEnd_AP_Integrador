@@ -28,12 +28,12 @@
 
   <div class="mb-3">
     <label for="exampleFormControlInput1" class="form-label">Nuevo Porcentaje</label>
-    <input type="file" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" accept=".jpg, jpeg, .png" (change)="UploadImage($event)" [(ngModel)]="educacioncomp.img" name="img">
+    <input type="file" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" accept=".jpg, jpeg, .png" (change)="UploadImage($event)">
   </div>
 
   <div class="mb-3">
     
-    <img [src]="imageserv.url" width="200px">
+    <input type="text" [(ngModel)]="educacioncomp.img" name="img" [value]="imageserv.url" class="form-control">
 
   </div>
 

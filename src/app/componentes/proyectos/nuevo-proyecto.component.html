@@ -30,6 +30,17 @@
         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" [(ngModel)]="link" required name="link">
       </div>
 
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Nuevo Porcentaje</label>
+        <input type="file" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" accept=".jpg, .jpeg, .png" (change)="UploadImage($event)">
+      </div>
+
+      <div class="imagen">
+
+        <input type="text" [(ngModel)]="img" name="img" [value]="ImageService.url" class="form-control">
+
+      </div>
+
       <br><br>
 
       <button class="btn btn-success"  type="submit">Agregar</button> <button class="btn btn-danger" routerLink="/">Volver</button>
