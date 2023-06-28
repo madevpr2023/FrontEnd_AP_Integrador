@@ -31,13 +31,13 @@
       </div>
 
       <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Nuevo Porcentaje</label>
-        <input type="file" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" accept=".jpg, .jpeg, .png" (change)="UploadImage($event)">
+        <label for="exampleFormControlInput1" class="form-label">Nueva Imagen</label>
+        <input type="file" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" accept=".jpg, .jpeg, .png" (change)="UploadImage($event)" [(ngModel)]="img" name="img">
       </div>
 
       <div class="imagen">
 
-        <input type="text" [(ngModel)]="img" name="img" [value]="ImageService.url" class="form-control">
+        <img [src]="ImageService.url" width="200px">
 
       </div>
 

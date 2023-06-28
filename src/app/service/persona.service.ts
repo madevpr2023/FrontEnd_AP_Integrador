@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Persona } from '../model/persona';
+import { environment } from 'src/environments/environment';
 
 
 @Injectable({
@@ -9,7 +10,7 @@ import { Persona } from '../model/persona';
 })
 export class PersonaService {
 
-  URL = 'https://app-springboot.onrender.com/Perfil/';
+  URL = environment.URL + 'Perfil/';
 
   
 

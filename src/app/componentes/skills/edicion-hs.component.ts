@@ -72,7 +72,7 @@ export class EdicionHsComponent implements OnInit{
 
     const id = this.activatedrouter.snapshot.params['id'];
 
-    const name = "photo" + id;
+    const name = "hs" + id;
 
     this.ImageService.UploadImage($event, name);
 

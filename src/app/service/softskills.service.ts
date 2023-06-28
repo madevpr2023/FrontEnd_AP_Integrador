@@ -2,13 +2,14 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Softskills } from '../model/softskills';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SoftskillsService {
 
-  URL = 'https://app-springboot.onrender.com/Soft_Skill/';
+  URL = environment.URL + 'Soft_Skill/';
 
   constructor(private http:HttpClient) { }
 

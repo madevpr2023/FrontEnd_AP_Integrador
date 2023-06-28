@@ -7,4 +7,10 @@ export const environment = {
     apiKey: 'AIzaSyAqLGPBO2IsJ2sXV7x7_5l-AQ1_X0GfDag',
     authDomain: 'portfolioap-14eec.firebaseapp.com',
     messagingSenderId: '996084685746',
-  },};
+  },
+
+  production: true,
+
+  URL:'https://app-springboot.onrender.com/'
+
+};

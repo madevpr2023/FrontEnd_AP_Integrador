@@ -13,7 +13,7 @@ export class EdicionAcercadeComponent implements OnInit{
 
   persona:any | Persona = null;
 
-  constructor(private personaserv:PersonaService, private activatedrouter:ActivatedRoute, private router:Router, private ImageService:ImageService){
+  constructor(private personaserv:PersonaService, private activatedrouter:ActivatedRoute, private router:Router, public ImageService:ImageService){
 
   }
 

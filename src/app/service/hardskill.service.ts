@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Hardskills } from '../model/hardskills';
+import { environment } from 'src/environments/environment';
 
 
 @Injectable({
@@ -9,7 +10,7 @@ import { Hardskills } from '../model/hardskills';
 })
 export class HardskillService {
 
-  URL = 'https://app-springboot.onrender.com/Hard_Skill/';
+  URL = environment.URL + 'Hard_Skill/';
 
   constructor(private http:HttpClient) { }
 

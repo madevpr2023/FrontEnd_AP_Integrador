@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Proyectos } from '../model/proyectos';
+import { environment } from 'src/environments/environment';
 
 
 @Injectable({
@@ -9,7 +10,7 @@ import { Proyectos } from '../model/proyectos';
 })
 export class ProyectosService {
 
-  URL = 'https://app-springboot.onrender.com/Proyectos/';
+  URL = environment.URL + 'Proyectos/';
 
 
   constructor(private http:HttpClient) { }

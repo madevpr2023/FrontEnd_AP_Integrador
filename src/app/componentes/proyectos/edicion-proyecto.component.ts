@@ -74,7 +74,7 @@ export class EdicionProyectoComponent implements OnInit{
 
     const id = this.activatedrouter.snapshot.params['id'];
 
-    const name = "photo" + id;
+    const name = "proyecto" + id;
 
     this.ImageService.UploadImage($event, name);
 
