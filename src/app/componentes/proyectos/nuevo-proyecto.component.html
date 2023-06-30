@@ -10,17 +10,6 @@
       </div>
 
       <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Nueva Imagen</label>
-        <input type="file" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" [(ngModel)]="img" required name="img" (change)="UploadImage($event)">
-      </div>
-
-      <div class="imagen">
-
-        <img [src]="ImageService.url" width="200px">
-
-      </div>
-
-      <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Nueva Descripcion</label>
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" [(ngModel)]="descripcion" required name="descripcion"></textarea>
       </div>
