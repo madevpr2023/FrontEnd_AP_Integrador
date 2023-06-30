@@ -9,7 +9,7 @@ import { environment } from 'src/environments/environment';
 })
 export class SoftskillsService {
 
-  URL = environment.URL + 'Soft_Skill/';
+  URL = 'https://app-springboot.onrender.com/Soft_Skill/';
 
   constructor(private http:HttpClient) { }
 

@@ -83,7 +83,7 @@ export class NuevoSkillComponent implements OnInit{
 
     const id = this.activatedroute.snapshot.params['id'];
 
-    const name = "hardskill" + id;
+    const name = "hardskill_" + id;
 
     this.ImageService.UploadImage($event, name);
 

@@ -10,7 +10,7 @@ import { environment } from 'src/environments/environment';
 })
 export class PersonaService {
 
-  URL = environment.URL + 'Perfil/';
+  URL = 'https://app-springboot.onrender.com/Perfil/';
 
   
 

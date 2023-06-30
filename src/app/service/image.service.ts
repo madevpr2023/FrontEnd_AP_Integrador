@@ -7,7 +7,7 @@ import { Storage, ref, uploadBytes, list, getDownloadURL } from '@angular/fire/s
 })
 export class ImageService  {
 
-  url = '';
+  url = "";
   
   constructor(private storage:Storage) {}
 

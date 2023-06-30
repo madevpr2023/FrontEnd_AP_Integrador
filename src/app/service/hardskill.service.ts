@@ -10,7 +10,7 @@ import { environment } from 'src/environments/environment';
 })
 export class HardskillService {
 
-  URL = environment.URL + 'Hard_Skill/';
+  URL = 'https://app-springboot.onrender.com/Hard_Skill/';
 
   constructor(private http:HttpClient) { }
 

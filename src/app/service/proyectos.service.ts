@@ -10,7 +10,7 @@ import { environment } from 'src/environments/environment';
 })
 export class ProyectosService {
 
-  URL = environment.URL + 'Proyectos/';
+  URL = 'https://app-springboot.onrender.com/Proyectos/';
 
 
   constructor(private http:HttpClient) { }

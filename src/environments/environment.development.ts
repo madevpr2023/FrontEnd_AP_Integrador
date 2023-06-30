@@ -9,8 +9,6 @@ export const environment = {
     messagingSenderId: '996084685746',
   },
 
-  production: true,
-
-  URL:'https://app-springboot.onrender.com/'
+  
 
 };

@@ -53,7 +53,7 @@ export class NuevoProyectoComponent implements OnInit{
 
     const id = this.activatedroute.snapshot.params['id'];
 
-    const name = "proyecto" + id;
+    const name = "proyecto_" + id;
 
     this.ImageService.UploadImage($event, name);
 

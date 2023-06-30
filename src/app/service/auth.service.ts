@@ -12,7 +12,7 @@ import { environment } from 'src/environments/environment';
 })
 export class AuthService {
 
-  URL = environment.URL + 'accountlogin/';
+  URL = 'https://app-springboot.onrender.com/accountlogin/';
 
   constructor(private http:HttpClient) {}
 

@@ -10,7 +10,7 @@ import { environment } from 'src/environments/environment';
 })
 export class EducacioncompService {
 
-  URL = environment.URL + 'Educacion_Complementaria/';
+  URL = 'https://app-springboot.onrender.com/Educacion_Complementaria/';
 
   constructor(private http:HttpClient) { }
 
