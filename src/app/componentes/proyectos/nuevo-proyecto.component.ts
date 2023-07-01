@@ -24,9 +24,7 @@ export class NuevoProyectoComponent implements OnInit{
 
   Creacion():void{
 
-    const proyecto = new Proyectos(this.nombre, this.img, this.descripcion, this.link);
-
-    proyecto.img = this.ImageService.url;
+    const proyecto = new Proyectos(this.nombre, this.img, this.descripcion);
 
 
     this.proyectoserv.guardado(proyecto).subscribe({
@@ -49,15 +47,10 @@ export class NuevoProyectoComponent implements OnInit{
 
   }
 
-  UploadImage($event:any){
+ 
 
-    const id = this.activatedroute.snapshot.params['id'];
+  
 
-    const name = "proyecto_" + id;
-
-    this.ImageService.UploadImage($event, name);
-
-  }
 
   
 

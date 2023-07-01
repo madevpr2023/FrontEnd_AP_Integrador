@@ -5,10 +5,12 @@ import { Educacioncomp } from '../model/educacioncomp';
 
 
 
+
 @Injectable({
   providedIn: 'root'
 })
 export class EducacioncompService {
+
 
   URL = 'https://app-springboot.onrender.com/Educacion_Complementaria/';
 

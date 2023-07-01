@@ -26,18 +26,6 @@
         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" [(ngModel)]="educacion.titulo_obtenido" required name="titulo_obtenido">
       </div>
 
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Nuevo Porcentaje</label>
-        <input type="file" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" accept=".jpg, .jpeg, .png" (change)="UploadImage($event)" name="img" [(ngModel)]="educacion.img">
-      </div>
-
-      <div class="mb-3">
-
-        <img [src]="ImageService.url" width="200px">
-
-      </div>
-    
-
       <br><br>
 
       <button class="btn btn-success" type="submit">Editar</button> <button class="btn btn-danger">Volver</button>

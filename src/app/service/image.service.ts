@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Storage, ref, uploadBytes, list, getDownloadURL } from '@angular/fire/storage'
+import { Storage, ref, uploadBytes, listAll, getDownloadURL } from '@angular/fire/storage'
 
 
 @Injectable({
@@ -27,11 +27,12 @@ export class ImageService  {
 
   }
 
+
   getImages(){
 
     const imagesRef = ref(this.storage, 'imagen')
 
-    list(imagesRef)
+    listAll(imagesRef)
 
     .then(async response => {
 

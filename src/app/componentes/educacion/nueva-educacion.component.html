@@ -24,17 +24,6 @@
         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" [(ngModel)]="titulo_obtenido" required name="titulo_obtenido">
       </div>
 
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Nuevo Porcentaje</label>
-        <input type="file" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" accept=".jpg, .jpeg, .png" (change)="UploadImage($event)" name="img" [(ngModel)]="img">
-      </div>
-
-      <div class="imagen">
-
-        <img [src]="ImageService.url" width="200px">
-
-      </div>
-
       <br><br>
 
       <button class="btn btn-success"  type="submit">Agregar</button> <button class="btn btn-danger">Volver</button>
@@ -67,17 +56,6 @@
   <div class="mb-3">
     <label for="exampleFormControlInput1" class="form-label">Nuevo Año de Finalizacion</label>
     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" [(ngModel)]="anioFin1" required name="anioFin1">
-  </div>
-
-  <div class="mb-3">
-    <label for="exampleFormControlInput1" class="form-label">Nueva Imagen</label>
-    <input type="file" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" accept=".jpg, jpeg, .png" (change)="UploadImage1($event)" name="img1" [(ngModel)]="img1">
-  </div>
-
-  <div class="imagen">
-
-    <img [src]="ImageService.url" width="200px">
-
   </div>
 
   <br><br>

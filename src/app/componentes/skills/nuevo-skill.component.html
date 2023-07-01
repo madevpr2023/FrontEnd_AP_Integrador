@@ -37,18 +37,7 @@
         <label for="exampleFormControlInput1" class="form-label">Nuevo Porcentaje</label>
         <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" [(ngModel)]="porcentaje1" name="porcentaje1">
       </div>
-
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Nueva Imagen</label>
-        <input type="file" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" accept=".jpg, .jpeg, .png" (change)="UploadImage($event)" name="img" [(ngModel)]="img">
-      </div>
-
-      <div class="mb-3">
-
-        <img [src]="ImageService.url" width="200px">
-
-      </div>
-
+      
       <br><br>
 
       <button class="btn btn-success" type="submit">Agregar</button> <button class="btn btn-danger" routerLink="/">Volver</button>

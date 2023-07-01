@@ -46,8 +46,6 @@ export class EdicionEduccompComponent implements OnInit{
 
     const id = this.activatedrouter.snapshot.params['id'];
 
-    this.educacioncomp.img = this.imageserv.url;
-
     this.educacioncompserv.actualizar(id, this.educacioncomp).subscribe(
 
       {
@@ -68,16 +66,6 @@ export class EdicionEduccompComponent implements OnInit{
 
 
   )
-
-  }
-
-  UploadImage($event:any){
-
-    const id = this.activatedrouter.snapshot.params['id'];
-
-    const name = "educacioncomp_" + id;
-
-    this.imageserv.UploadImage($event, name);
 
   }
 

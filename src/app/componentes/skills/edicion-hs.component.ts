@@ -44,8 +44,6 @@ export class EdicionHsComponent implements OnInit{
 
     const id = this.activatedrouter.snapshot.params['id'];
 
-    this.hs.img = this.ImageService.url;
-
     this.hardskillserv.actualizar(id, this.hs).subscribe({
 
       next:()=> {
@@ -66,18 +64,12 @@ export class EdicionHsComponent implements OnInit{
 
 
 
-  }
-
-  UploadImage($event:any){
-
-    const id = this.activatedrouter.snapshot.params['id'];
-
-    const name = "hardskill_" + id;
-
-    this.ImageService.UploadImage($event, name);
 
   }
 
+  
+
+ 
 
 
 }

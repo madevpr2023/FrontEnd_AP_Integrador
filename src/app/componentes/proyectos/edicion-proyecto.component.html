@@ -12,17 +12,6 @@
       </div>
 
       <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Imagen</label>
-        <input type="file" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" (change)="UploadImage($event)" accept=".jpg, .jpeg, .png" name="img" [(ngModel)]="proyectos.img">
-      </div>
-
-      <div class="mb-3">
-       
-        <img [src]="ImageService.url" width="200px">
-
-      </div>
-
-      <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Descripcion</label>
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" [(ngModel)]="proyectos.descripcion" required name="descripcion"></textarea>
       </div>
@@ -31,6 +20,8 @@
         <label for="exampleFormControlInput1" class="form-label">Link del Proyecto</label>
         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" [(ngModel)]="proyectos.link" required name="link">
       </div>
+
+      
 
       <br><br>
 

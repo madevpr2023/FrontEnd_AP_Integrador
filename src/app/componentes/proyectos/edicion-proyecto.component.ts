@@ -46,8 +46,6 @@ export class EdicionProyectoComponent implements OnInit{
 
     const id = this.activatedrouter.snapshot.params['id'];
 
-    this.proyectos.img = this.ImageService.url
-
     this.proyectoserv.actualizar(id, this.proyectos).subscribe(
 
       {
@@ -70,14 +68,8 @@ export class EdicionProyectoComponent implements OnInit{
 
   }
 
-  UploadImage($event:any){
 
-    const id = this.activatedrouter.snapshot.params['id'];
 
-    const name = "proyecto_" + id;
-
-    this.ImageService.UploadImage($event, name);
-
-  }
+  
 
 }

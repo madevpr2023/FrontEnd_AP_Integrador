@@ -36,9 +36,7 @@ export class NuevaEducacionComponent implements OnInit{
 
   Creacion():void{
 
-    const educ = new Educacion(this.institucion, this.anioInicio, this.anioFin, this.titulo_obtenido, this.img);
-
-    educ.img = this.ImageService.url;
+    const educ = new Educacion(this.institucion, this.anioInicio, this.anioFin, this.titulo_obtenido);
 
     this.educacionserv.guardado(educ).subscribe({
 
@@ -62,9 +60,7 @@ export class NuevaEducacionComponent implements OnInit{
 
   Creacion1():void{
 
-    const educcomp = new Educacioncomp(this.institucion1, this.curso, this.anioInicio1, this.anioFin1, this.img1);
-
-    educcomp.img1 = this.ImageService.url;
+    const educcomp = new Educacioncomp(this.institucion1, this.curso, this.anioInicio1, this.anioFin1);
 
     this.educacioncompserv.guardado(educcomp).subscribe({
 
@@ -88,25 +84,10 @@ export class NuevaEducacionComponent implements OnInit{
 
   }
 
-  UploadImage($event:any){
 
-    const id = this.activatedrouter.snapshot.params['id'];
+  
 
-    const name = "educacion" + id;
-
-    this.ImageService.UploadImage($event, name);
-
-  }
-
-  UploadImage1($event:any){
-
-    const id = this.activatedrouter.snapshot.params['id'];
-
-    const name = "educacioncomp_" + id;
-
-    this.ImageService.UploadImage($event, name);
-
-  }
+ 
 
 
 

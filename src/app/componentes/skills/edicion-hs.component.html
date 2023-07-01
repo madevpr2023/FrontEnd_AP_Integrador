@@ -4,7 +4,7 @@
 
 <div *ngIf="hs">
 
-<form class="formulario" #f="ngForm" (ngSumbit)="Actualizacion()" novalidate>
+<form class="formulario" #f="ngForm" (ngSubmit)="Actualizacion()" novalidate>
 
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Habilidad</label>
@@ -16,16 +16,6 @@
         <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" [(ngModel)]="hs.porcentaje" name="porcentaje">
       </div>
 
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Imagen</label>
-        <input type="file" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" (change)="UploadImage($event)" accept=".jpg, .jpeg, .png" name="img" [(ngModel)]="hs.img">
-      </div>
-
-      <div class="mb-3">
-
-        <img [src]="ImageService.url" width="200px">
-        
-      </div>
 
       <br><br>
 

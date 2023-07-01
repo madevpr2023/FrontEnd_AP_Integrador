@@ -55,9 +55,9 @@ export class NuevoSkillComponent implements OnInit{
 
   Creacion1():void{
 
-    const hs = new Hardskills(this.habilidad1, this.porcentaje1, this.img);
+    const hs = new Hardskills(this.habilidad1, this.porcentaje1);
 
-    hs.img = this.ImageService.url;
+   
 
     this.hardskillserv.guardado(hs).subscribe({
 
@@ -79,15 +79,8 @@ export class NuevoSkillComponent implements OnInit{
 
   }
 
-  UploadImage($event:any){
+  
 
-    const id = this.activatedroute.snapshot.params['id'];
-
-    const name = "hardskill_" + id;
-
-    this.ImageService.UploadImage($event, name);
-
-  }
 
 
 }
